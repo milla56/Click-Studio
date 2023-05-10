@@ -8,10 +8,12 @@ function make_base_auth(user, password) {
   var hash = btoa(tok);
   return "Basic " + hash;
 }
-$.ajax
+
+function doTheSearch(queryString) {
+  $.ajax
   ({
     type: "GET",
-    url: "https://api.shutterstock.com/v2/images/search",
+    url: "https://api.shutterstock.com/v2/images/search?query=" + queryString,
     dataType: 'json',
     async: true,
     data: '{}',
@@ -23,12 +25,27 @@ $.ajax
     }
 }).then(parseSearch);
 
+}
+
+
 function parseSearch(response) {
   console.log(response);
   imageDiv = $("#imagediv");
 
-  img = $("<img>");
-  img.attr("src", response.data[1].assets.huge_thumb.url);
+  for(var i=0; i<20; i++) {
+    var image = {};
+    image.url = response.data[i].assets.preview.url;
+    image.height = response.data[i].assets.preview.height;
+    image.width = response.data[i].assets.preview.width;
+    imagesArray.push(image);
+  };
 
-  imageDiv.append(img);
+  console.log(imagesArray);
+
+  renderImages();
+
+  // img = $("<img>");
+  // img.attr("src", response.data[1].assets.preview.url);
+
+  // imageDiv.append(img);
 }
