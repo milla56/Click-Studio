@@ -81,6 +81,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* search input style */
+
+.form-control {
+  border-radius: 50px !important;
+  height: 60px !important;
+}
+
 /* Button */
 #searchButton{
   background: var(--dark2);
