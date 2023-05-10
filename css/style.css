@@ -1,0 +1,88 @@
+:root {
+  --text: #DCCAE9;
+  --softpurple: #A6A9C8;
+  --text2: #D3D9E9;
+  --dark: #31293F;
+  --dark2: #272932;
+  --middletone: #554D74;
+  --button: #FFB6C1;
+}
+
+ /* General */
+ .customNav {
+  position: fixed;
+  width: 100%;
+  background-color: var(--dark2);
+  z-index: 10;
+}
+.navbar-nav {
+  margin-left: 62%;
+  margin-right: 0 !important;
+}
+.navbar-brand img {
+  padding-right: 15px;
+  width: 65px;
+}
+.nav-item {
+  margin: 0px 15px;
+}
+/* Navigation dropdown menu */
+.dropdown-menu {
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background: #8E839E;
+}
+.nav-link:hover {
+  text-decoration: none;
+    background: #8E839E;
+
+}
+
+/* Navigation links */
+.customNav a {
+  color: var(--text2) !important;
+}
+.navCTA {
+  font-size: 15px;
+}
+
+/* Jumbotron  */
+.jumbotron {
+  background-image: url(../images/image3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(80vh - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.jumbotext {
+  width: 70%;
+  min-width: 700px;
+  color: white;
+  text-align: center !important;
+  margin-bottom: 60px;
+  font-weight: bold;
+  
+}
+
+.jumbotext h1 {
+  font-size: 67px;
+}
+.jumbotext p {
+  font-size:18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button */
+#searchButton{
+  background: var(--dark2);
+  color: white;
+}

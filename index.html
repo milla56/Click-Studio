@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Jura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title> Click Studio </title>
+</head>
+
+<body>
+	 <!-- Navigation bar -->
+     <nav class="navbar navbar-expand-lg customNav">
+        <a class="navbar-brand" href="#"><img src="images/LOGO.png" alt="logo">Click Studio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span><i class="fa fa-bars" aria-hidden="true" id="burger"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#aboutus">About Us <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#explore" 
+              id="navbarDropdown" role="button" data-toggle="dropdown" 
+              aria-haspopup="true" aria-expanded="false">Explore</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#discover">Discover Photos</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#popular">Popular Searches</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#blog">Blog</a>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#upload">Upload</a>
+              </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+        <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="portrait">
+          <div class="jumbotext">
+          <h1>Click Studio</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel enim qua.</p>
+            </div>
+            <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" id="search-input" />
+                <button type="button" class="btn" id="searchButton">Search</button>
+              </div>
+            </div>
+        </div>
+
+
+<script src="./javascript/script.js"></script>
+</body>
+
+</html>
