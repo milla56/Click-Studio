@@ -42,6 +42,7 @@ function renderRow(numberOfColumns, subArrayImages) {
     image.width = subArrayImages[i].width;
     image.height = subArrayImages[i].height;
     image.attr("src", subArrayImages[i].url);
+    image.addClass("grid-images");
 
     colDiv.append(image);
     rowDiv.append(colDiv);

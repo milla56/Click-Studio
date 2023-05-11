@@ -137,5 +137,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--softpurple);
+  background-image: cover;
+  overflow: hidden;
+  object-fit: cover;
 }
 
