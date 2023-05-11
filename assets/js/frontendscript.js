@@ -1,11 +1,10 @@
-var searchString = "";
+function initVariables() {
+  picturesDiv.empty();
+  imagesArray = [];
+}
 
-// CLICK HANDLERS
-// ==========================================================
-searchButton.on("click", function(event) {
-  event.preventDefault();
-
-  // initVariables();
+function prepareSearch() {
+  initVariables();
 
   //see the structure in globalvariables
   searchString = searchInput.val().trim();
@@ -13,6 +12,21 @@ searchButton.on("click", function(event) {
 
   //this is in the backendscript
   doTheSearch(searchString);
+}
+
+// CLICK HANDLERS
+// ==========================================================
+searchButton.on("click", function(event) {
+  event.preventDefault();
+  prepareSearch();
+});
+
+searchInput.on("keypress", function(event) {
+  //event.preventDefault();
+  if(event.which === 13) {
+    prepareSearch();
+  }
+
 });
 
 function renderImages() {

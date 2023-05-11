@@ -1,7 +1,6 @@
-console.log("Hello :)");
-
 var username = "QsOKrafpmPS7P17AiEnnbsVcTSZSC40Y";
 var password = "svCAQ2cLA6TauA3d";  
+var searchURL = "https://api.shutterstock.com/v2/images/search?query=";
 
 function make_base_auth(user, password) {
   var tok = user + ':' + password;
@@ -13,7 +12,7 @@ function doTheSearch(queryString) {
   $.ajax
   ({
     type: "GET",
-    url: "https://api.shutterstock.com/v2/images/search?query=" + queryString,
+    url: searchURL + queryString,
     dataType: 'json',
     async: true,
     data: '{}',
@@ -30,7 +29,6 @@ function doTheSearch(queryString) {
 
 function parseSearch(response) {
   console.log(response);
-  imageDiv = $("#imagediv");
 
   for(var i=0; i<20; i++) {
     var image = {};
@@ -42,10 +40,6 @@ function parseSearch(response) {
 
   console.log(imagesArray);
 
+  //this is in the frontendscript
   renderImages();
-
-  // img = $("<img>");
-  // img.attr("src", response.data[1].assets.preview.url);
-
-  // imageDiv.append(img);
 }

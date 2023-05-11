@@ -4,6 +4,9 @@ var picturesDiv = $("#pictures");
 
 var idImage = "image";
 
+//this is the search string entered to the inpt field
+var searchString = "";
+
 var imageData = {
   "url": "",
   "width": "",
