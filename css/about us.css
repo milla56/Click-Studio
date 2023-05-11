@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One'); 
 
-/* :root {
-  --text: #DCCAE9;
-  --softpurple: #A6A9C8;
-  --text2: #D3D9E9;
-  --dark: #31293F;
-  --dark2: #272932;
-  --middletone: #554D74;
-  --button: #FFB6C1;
-} */
+:root {
+
+  --bck: #7B92AA;
+  --bck2: #536980;
+  --bck3:#34495e;
+  --el: #3498db;
+  --circle: #C6C9D0;
+  
+}
 
 *{
   margin: 0;
@@ -18,7 +18,7 @@
 }
 
 body{
-  background-color: #8c7ae6;
+  background-color: var(--bck3);
 }
 
 .wrapper{
@@ -26,11 +26,15 @@ body{
   text-align: center;
 }
 
-.wrapper h1{
+h1{
   
   font-size: 48px;
   color: white;
-  margin-bottom: 25px;
+  margin-bottom: 100px;
+  margin-left: -30%;
+  display: inline-block;
+  border-bottom: 2px solid var(--el);
+  
 }
 
 .ourTeam{
@@ -43,13 +47,13 @@ body{
 .team-member {
   width: 250px;
   margin: 5px;
-  background: white;
+  background: var(--bck2);
   padding: 20px 10px;
 
 }
 
 .member-img{
-  background: #e9e5fa;
+  background: var(--bck);
   max-width: 190px;
   width: 100%;
   height: 190px;
@@ -111,7 +115,8 @@ p {
   position: absolute;
   top: 5px;
   left: 5px;
-  background: black;
+  background-color: var(--circle);
+  opacity: .9;
   width: 95%;
   height: 95%;
   border-radius: 50%;
@@ -128,7 +133,7 @@ p {
 }
 
 .social-media .fab{
-  color: #8c7ae6;
+  color: var(--el);
   font-size:20px;
   margin-left: 6px;
   margin-right: 6px;
@@ -137,7 +142,7 @@ p {
 
 
 .social-media .fa{
-  color: #8c7ae6;
+  color: var(--el);
   font-size:20px;
 }
 
