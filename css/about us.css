@@ -4,9 +4,11 @@
 
   --bck: #7B92AA;
   --bck2: #536980;
-  --bck3:#34495e;
+  --bck3:#0F3551;
   --el: #3498db;
   --circle: #C6C9D0;
+  --orange:#E8745D;
+  --blue: #058DD8;
   
 }
 
@@ -18,7 +20,8 @@
 }
 
 body{
-  background-color: var(--bck3);
+  background: linear-gradient(#0C1921,#162D3C) ;
+  
 }
 
 .wrapper{
@@ -33,7 +36,7 @@ h1{
   margin-bottom: 100px;
   margin-left: -30%;
   display: inline-block;
-  border-bottom: 2px solid var(--el);
+  border-bottom: 2px solid var(--blue);
   
 }
 
@@ -47,13 +50,13 @@ h1{
 .team-member {
   width: 250px;
   margin: 5px;
-  background: var(--bck2);
+  background: #213847;
   padding: 20px 10px;
 
 }
 
 .member-img{
-  background: var(--bck);
+  background: var(--circle);
   max-width: 190px;
   width: 100%;
   height: 190px;
@@ -108,6 +111,7 @@ p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
 
 }
 
@@ -133,7 +137,7 @@ p {
 }
 
 .social-media .fab{
-  color: var(--el);
+  color: var(--blue);
   font-size:20px;
   margin-left: 6px;
   margin-right: 6px;
@@ -142,7 +146,7 @@ p {
 
 
 .social-media .fa{
-  color: var(--el);
+  color: var(--blue);
   font-size:20px;
 }
 
