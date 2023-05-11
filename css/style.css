@@ -8,48 +8,28 @@
   --button: #FFB6C1;
 }
 
- /* General */
- .customNav {
-  position: fixed;
-  width: 100%;
-  background-color: var(--dark2);
-  z-index: 10;
+.navbar {
+  position: absolute;
+  top: -140px;
+  width: 80%;
+  
 }
-.navbar-nav {
-  margin-left: 62%;
-  margin-right: 0 !important;
+.navbar-brand {
+  font-size: 30px !important;
 }
-.navbar-brand img {
-  padding-right: 15px;
-  width: 65px;
+
+#navbarNav{
+  margin-left: 0;
+  position: absolute;
+  right: 10px;
+
 }
-.nav-item {
-  margin: 0px 15px;
-}
-/* Navigation dropdown menu */
-.dropdown-menu {
-  background: url("../images/transparency.png");
-  background-color: transparent !important;
-  background-size: cover;
-}
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #16181b;
-    text-decoration: none;
-    background: #8E839E;
-}
-.nav-link:hover {
-  text-decoration: none;
-    background: #8E839E;
+#navbarNav li {
+  margin-left: 30px;
+  font-size: 20px;
 
 }
 
-/* Navigation links */
-.customNav a {
-  color: var(--text2) !important;
-}
-.navCTA {
-  font-size: 15px;
-}
 
 /* Jumbotron  */
 .jumbotron {
@@ -58,13 +38,13 @@
   background-repeat: no-repeat;
   height: calc(80vh - 10px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   
 }
 
 .jumbotext {
-  width: 70%;
   min-width: 700px;
   color: white;
   text-align: center !important;
@@ -74,22 +54,63 @@
 }
 
 .jumbotext h1 {
-  font-size: 67px;
+  font-size: 80px;
+  margin: 10px;
 }
+
+
 .jumbotext p {
+  color: var(--text2);
   font-size:18px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* search input style */
 
-.form-control {
-  border-radius: 50px !important;
-  height: 60px !important;
+.input-group {
+  border-radius: 50%;
+  background: transparent !important;
 }
 
-/* Button */
-#searchButton{
-  background: var(--dark2);
-  color: white;
+.form-control {
+  height: 60px !important;
+  border: none;
 }
+
+
+/* Button */
+
+#searchButton{
+  top:10px;
+  border-radius: 0;
+  transition: ease-in;
+  border-radius: 5px;
+  background: var(--middletone);
+  color: var(--softpurple);
+
+}
+
+#searchButton:hover{
+  color: var(--text) !important;
+
+}
+
+.btn-group {
+  position:absolute;
+  left: 70px;
+  cursor: pointer;
+}
+
+
+/* Grid styling */
+
+.container-fluid {
+  width: 90% !important;
+}
+
+.grid-gap {
+  border: 5px solid white;
+  background-color: var(--middletone);
+  height: 300px;
+}
+
