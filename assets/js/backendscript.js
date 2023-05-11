@@ -30,7 +30,7 @@ function doTheSearch(queryString) {
 function parseSearch(response) {
   console.log(response);
 
-  for(var i=0; i<20; i++) {
+  for(var i=0; i<maxNumberOfImages; i++) {
     var image = {};
     image.url = response.data[i].assets.preview.url;
     image.height = response.data[i].assets.preview.height;
