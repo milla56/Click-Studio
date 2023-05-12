@@ -1,38 +1,30 @@
-console.log("Hello :)");
-
-var username = "QsOKrafpmPS7P17AiEnnbsVcTSZSC40Y";
-var password = "svCAQ2cLA6TauA3d";  
-
+//this is necessary for the API Basic Authentication
 function make_base_auth(user, password) {
   var tok = user + ':' + password;
   var hash = btoa(tok);
   return "Basic " + hash;
 }
 
-function doTheSearch(queryString) {
+//run the Image Search API call
+function doTheImageSearch(queryString) {
   $.ajax
   ({
     type: "GET",
-    url: "https://api.shutterstock.com/v2/images/search?query=" + queryString,
+    url: searchImageURL + queryString,
     dataType: 'json',
     async: true,
     data: '{}',
     beforeSend: function (xhr){ 
         xhr.setRequestHeader('Authorization', make_base_auth(username, password)); 
-    },
-    success: function (){
-        console.log('Thanks for your comment!'); 
     }
-}).then(parseSearch);
+}).then(parseImageSearch);
 
 }
 
-
-function parseSearch(response) {
-  console.log(response);
-  imageDiv = $("#imagediv");
-
-  for(var i=0; i<20; i++) {
+//parsing the results
+function parseImageSearch(response) {
+  
+  for(var i=0; i<maxNumberOfImages; i++) {
     var image = {};
     image.url = response.data[i].assets.preview.url;
     image.height = response.data[i].assets.preview.height;
@@ -40,12 +32,42 @@ function parseSearch(response) {
     imagesArray.push(image);
   };
 
-  console.log(imagesArray);
+  //chaining the second API call
+  doTheVideoSearch(searchString);
+}
 
-  renderImages();
 
-  // img = $("<img>");
-  // img.attr("src", response.data[1].assets.preview.url);
+//run the Video Search API call
+function doTheVideoSearch(queryString) {
+  $.ajax
+  ({
+    type: "GET",
+    url: searchVideoURL + queryString,
+    dataType: 'json',
+    async: true,
+    data: '{}',
+    beforeSend: function (xhr){ 
+        xhr.setRequestHeader('Authorization', make_base_auth(username, password)); 
+    }
+}).then(parseVideoSearch);
+}
 
-  // imageDiv.append(img);
+//parsing the results
+function parseVideoSearch(response) {
+  var tmpCount = 0;
+
+  if (maxNumberOfImages > response.data.length) {
+    tmpCount = response.data.length;
+  } else {
+    tmpCount = maxNumberOfImages;
+  }
+  
+  for(var i=0; i<tmpCount; i++) {
+    var video = {};
+    video.url = response.data[i].assets.thumb_webm.url;
+    videosArray.push(video);
+  };
+
+  //this is in the frontendscript
+  renderGrid();
 }
