@@ -3,12 +3,17 @@
 :root {
 
   --bck: #7B92AA;
-  --bck2: #536980;
+ 
   --bck3:#0F3551;
   --el: #3498db;
   --circle: #C6C9D0;
   --orange:#E8745D;
   --blue: #058DD8;
+
+  --background: #222831;
+  --lightBlue: #05D9FF;
+  --bck2: #323a47;
+  --hover: #4f5b70;
   
 }
 
@@ -20,7 +25,7 @@
 }
 
 body{
-  background: linear-gradient(#0C1921,#162D3C) ;
+  background: var(--background) ;
   
 }
 
@@ -33,11 +38,27 @@ h1{
   
   font-size: 48px;
   color: white;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   margin-left: -30%;
   display: inline-block;
   border-bottom: 2px solid var(--blue);
   
+}
+
+/* INFO TEXT */
+.info {
+  font-family: sans-serif;
+  color: white;
+  font-size: 15px;
+  text-align: left;
+  margin-left: 24%;
+  margin-top: 0.5%;
+  
+}
+
+/* LAST P ELEMENT  */
+#lastP{
+  margin-bottom: 45px;
 }
 
 .ourTeam{
@@ -47,14 +68,17 @@ h1{
   flex-wrap: wrap;
 }
 
+/* CARD */
 .team-member {
   width: 250px;
   margin: 5px;
-  background: #213847;
+  background: var(--bck2);
   padding: 20px 10px;
+  border-right: 2px solid var(--blue);
 
 }
 
+/* IMAGES THE CIRCLE BEHIND IT */
 .member-img{
   background: var(--circle);
   max-width: 190px;
@@ -95,23 +119,33 @@ h1{
 
 }
 
+/* NAMES */
 h3{
   text-transform: uppercase;
   font-size:18px;
   line-height: 18px;
   letter-spacing: 2px;
   margin: 15px 0 0px;
+  color: var(--el);
 }
 
-.ourTeam .team-member span {
-  font-size: 10px;
+/* JOB TITLE */
+h4 {
+  font-size: 13px;
+  margin-top: 5%;
+  color: var(--circle);
+  font-family: sans-serif;
+  display: inline-block;
+  border-bottom: 2px solid var(--blue);
 }
 
+/* JOB DESCRIPTION  */
 p {
   margin-top: 20px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
+  color: var(--circle);
 
 }
 
@@ -132,23 +166,30 @@ p {
   
 }
 
+/* SOCIAL MEDIA */
 .social-media .item{
   margin: 0 10px;
 }
 
-.social-media .fab{
-  color: var(--blue);
-  font-size:20px;
-  margin-left: 6px;
-  margin-right: 6px;
-}
-
-
-
-.social-media .fa{
-  color: var(--blue);
+.social-media{
   font-size:20px;
 }
+
+.github-item{
+  color:var(--blue);
+  margin-right: 5px;
+}
+
+.email-item{
+  color:var(--blue);
+}
+
+.linkedin-item{
+  color:var(--blue);
+  margin-left: 5px;
+
+}
+
 
 .ourTeam .team-member .member-img:hover .social-media{
   transform: scale(1);
