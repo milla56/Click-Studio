@@ -1,19 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One'); 
 
 :root {
 
   --bck: #7B92AA;
- 
-  --bck3:#0F3551;
-  --el: #3498db;
-  --circle: #C6C9D0;
-  --orange:#E8745D;
-  --blue: #058DD8;
-
-  --background: #222831;
-  --lightBlue: #05D9FF;
-  --bck2: #323a47;
-  --hover: #4f5b70;
   
 }
 
@@ -21,176 +9,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Exo 2", sans-serif;
+  list-style: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body{
-  background: var(--background) ;
-  
+  background-color: white;
 }
 
 .wrapper{
-  margin-top: 60px;
-  text-align: center;
-}
-
-h1{
-  
-  font-size: 48px;
-  color: white;
-  margin-bottom: 40px;
-  margin-left: -30%;
-  display: inline-block;
-  border-bottom: 2px solid var(--blue);
-  
-}
-
-/* INFO TEXT */
-.info {
-  font-family: sans-serif;
-  color: white;
-  font-size: 15px;
-  text-align: left;
-  margin-left: 24%;
-  margin-top: 0.5%;
-  
-}
-
-/* LAST P ELEMENT  */
-#lastP{
-  margin-bottom: 45px;
-}
-
-.ourTeam{
-  width: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* CARD */
-.team-member {
-  width: 250px;
-  margin: 5px;
-  background: var(--bck2);
-  padding: 20px 10px;
-  border-right: 2px solid var(--blue);
-
-}
-
-/* IMAGES THE CIRCLE BEHIND IT */
-.member-img{
-  background: var(--circle);
-  max-width: 190px;
-  width: 100%;
-  height: 190px;
-  margin: 0 auto;
-  border-radius: 50%;
-  padding: 5px;
-  position: relative;
-  cursor: pointer;
-}
-
-/* image one */
-.one{   
-  width:400px;
-  height: 400px;
-  margin-top: -115px;
-  margin-left: -120px;
-  
- 
-}
-
-/* image two */
-.two{
-  width:400px;
-  height: 400px;
-  margin-top: -110px;
-  margin-left: -115px;
-}
-
-/* image three */
-
-.three{
-  width:400px;
-  height: 400px;
-  margin-top: -110px;
-  margin-left: -115px;
-
-}
-
-/* NAMES */
-h3{
-  text-transform: uppercase;
-  font-size:18px;
-  line-height: 18px;
-  letter-spacing: 2px;
-  margin: 15px 0 0px;
-  color: var(--el);
-}
-
-/* JOB TITLE */
-h4 {
-  font-size: 13px;
-  margin-top: 5%;
-  color: var(--circle);
-  font-family: sans-serif;
-  display: inline-block;
-  border-bottom: 2px solid var(--blue);
-}
-
-/* JOB DESCRIPTION  */
-p {
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: var(--circle);
-
-}
-
-.social-media{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: var(--circle);
-  opacity: .9;
-  width: 95%;
-  height: 95%;
-  border-radius: 50%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0);
-  transition:all 0.5s ease;
-  
 }
 
-/* SOCIAL MEDIA */
-.social-media .item{
-  margin: 0 10px;
+.pricing-table{
+  display: flex;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
-.social-media{
-  font-size:20px;
+.pricing-table .card{
+  width: 200px;
+  background: #fff;
+  border-right: 2px solid #f4f4f9;
+  padding: 30px;
+  text-align: center;
+  position: relative;
 }
 
-.github-item{
-  color:var(--blue);
-  margin-right: 5px;
+.pricing-table .card:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
-.email-item{
-  color:var(--blue);
-}
-
-.linkedin-item{
-  color:var(--blue);
-  margin-left: 5px;
-
-}
-
-
-.ourTeam .team-member .member-img:hover .social-media{
-  transform: scale(1);
+.pricing-table .card:last-child{
+  border-right: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
