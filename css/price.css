@@ -34,7 +34,7 @@ body{
 
 .images{
   position:absolute;
-  left: 36px;
+  right: 780px;
   pointer-events: none;
   color: white;
   font-size: 18px;
@@ -61,6 +61,7 @@ body{
   top:50%;
   transform: translateY(-50%);
   left:6px;
+  transition: all 0.5s;
 }
 
 .plansSwitch:checked::before{
@@ -68,7 +69,15 @@ body{
   width: 106px;
 }
 
+/* HEADER AND SWITCH BUTTON */
+.pricing-header{
+ text-align: center;
+}
 
+.pricing-header h1{
+  font-size:36px;
+  margin-right:30px;
+}
 
 .wrapper{
   height: 100vh;
