@@ -49,3 +49,32 @@ body{
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
+
+.card p{
+  font-size: 16px; 
+  font-weight: 700;
+
+}
+
+/* Price */
+.price{
+  margin: 15px 0;
+}
+
+.price p{
+  color: #00066a;
+  position: relative;
+}
+
+.money{
+  font-size: 26px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.pound{
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  font-weight: 700;
+}
