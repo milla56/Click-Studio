@@ -18,6 +18,58 @@ body{
   background-color: white;
 }
 
+/* SWITCH CONTAINER */
+.plansSwitch{
+  width: 280px;
+  background: #00066a;
+  height: 55px;
+  appearance: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+
+.images{
+  position:absolute;
+  left: 36px;
+  pointer-events: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.video{
+  position:absolute;
+  margin-left: -85px;
+  pointer-events: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
+
+}
+
+.plansSwitch::before{
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 120px;
+  border-radius: 24px;
+  background-color: aquamarine;
+  top:50%;
+  transform: translateY(-50%);
+  left:6px;
+}
+
+.plansSwitch:checked::before{
+  left:168px;
+  width: 106px;
+}
+
+
+
 .wrapper{
   height: 100vh;
   display: flex;
