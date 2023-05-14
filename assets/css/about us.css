@@ -20,7 +20,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .navbar {
@@ -91,6 +90,7 @@ body {
   border-radius: 30px;
   background-color: #c8c8c868;
   margin-top: 30px;
+  margin-bottom: 60px;
 
 }
 
@@ -144,23 +144,6 @@ p {
 
 }
 
-.social-media{
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-color: var(--circle);
-  opacity: .9;
-  width: 95%;
-  height: 95%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
-  transition:all 0.5s ease;
-  
-}
-
 /* SOCIAL MEDIA */
 
 .Social-icons {
@@ -181,4 +164,7 @@ p {
 
 footer {
   font-size: 24px;
+  position: absolute;
+  width: 100%;
+  left: 0;
   }
