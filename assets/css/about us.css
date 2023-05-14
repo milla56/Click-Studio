@@ -25,7 +25,7 @@ body {
 
 .navbar {
   position: absolute;
-  top: -80px;
+  top: -55px;
   width: 80%;
   margin: 0 auto;
   
@@ -61,7 +61,6 @@ body {
   margin-bottom: 20px !important;
   color: rgb(69, 69, 69);
   text-align: center;
-  font-weight: bold;
 
   
 }
@@ -116,6 +115,7 @@ body {
 
 
 /* NAMES */
+
 h3{
   text-transform: uppercase;
   font-size:18px;
@@ -179,3 +179,6 @@ p {
 }
 
 
+footer {
+  font-size: 24px;
+  }
