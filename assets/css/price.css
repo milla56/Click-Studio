@@ -48,6 +48,7 @@ body {
   background-image: url(../images/image3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,7 +72,7 @@ body {
 
 .images{
   position:absolute;
-  right: 710px;
+  right: 900px;
   pointer-events: none;
   color: white;
   font-size: 18px;
@@ -126,6 +127,7 @@ body {
 .pricing-table{
   display: flex;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  margin: 20px;
 }
 
 /* CARD */
@@ -170,6 +172,11 @@ body {
   font-size: 26px;
   font-weight: 700;
   display: inline-block;
+}
+
+ul li {
+  list-style: none;
+  text-align: left;
 }
 
 .pound{
@@ -256,4 +263,6 @@ footer {
   position: absolute;
   width: 100%;
   left: 0;
+  margin-top: -60px;
+
   }
