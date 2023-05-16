@@ -72,7 +72,7 @@ body {
 
 .images{
   position:absolute;
-  right: 1000px;
+  right: 53%;
   pointer-events: none;
   color: white;
   font-size: 18px;
@@ -118,7 +118,7 @@ body {
 }
 
 .wrapper{
-  height: 80vh;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
