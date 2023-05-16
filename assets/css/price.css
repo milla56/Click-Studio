@@ -1,0 +1,268 @@
+:root {
+  --text: #DCCAE9;
+  --softpurple: #A6A9C8;
+  --text2: #D3D9E9;
+  --dark: #31293F;
+  --dark2: #272932;
+  --middletone: #554D74;
+  --button: #FFB6C1;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar {
+  position: absolute;
+  top: -50px;
+  width: 80%;
+  
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+  color: white !important;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  top: -5px;
+}
+
+#navbarNav{
+  margin-left: 0;
+  position: absolute;
+  right: 10px;
+
+}
+#navbarNav li {
+  margin-left: 30px;
+  font-size: 20px;
+
+}
+
+
+/* Jumbotron  */
+.jumbotron {
+  background-image: url(../images/image3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* SWITCH CONTAINER */
+.plansSwitch{
+  width: 280px;
+  background: #00066a;
+  height: 55px;
+  appearance: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+
+.images{
+  position:absolute;
+  right: 1000px;
+  pointer-events: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.video{
+  position:absolute;
+  margin-left: -85px;
+  pointer-events: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 12px;
+
+}
+
+.plansSwitch::before{
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 120px;
+  border-radius: 24px;
+  background-color: rgb(143, 141, 141);
+  top:50%;
+  transform: translateY(-50%);
+  left:6px;
+  transition: all 0.5s;
+}
+
+.plansSwitch:checked::before{
+  left:168px;
+  width: 106px;
+}
+
+/* HEADER AND SWITCH BUTTON */
+.pricing-header{
+ text-align: center;
+}
+
+.pricing-header h1{
+  font-size:36px;
+  margin-right:30px;
+}
+
+.wrapper{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-table{
+  display: flex;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  margin: 20px;
+}
+
+/* CARD */
+.pricing-table .card{
+  width: 250px;
+  background: #fff;
+  border-right: 2px solid #f4f4f9;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+ 
+}
+
+.pricing-table .card:first-child{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.pricing-table .card:last-child{
+  border-right: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.pricing-table .card .title p{
+  font-size: 16px; 
+  font-weight: 700;
+
+}
+
+/* Price */
+.pricing-table .card .price{
+  margin: 15px 0;
+}
+
+.pricing-table .card .price p{
+  color: #00066a;
+  position: relative;
+}
+
+.money{
+  font-size: 26px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+ul li {
+  list-style: none;
+  text-align: left;
+}
+
+.pound{
+  position: absolute;
+  top: 2px;
+  left: 35px;
+  font-weight: 700;
+}
+
+/* LIST OF FEATURES */
+
+.pricing-table .card ul li{
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+
+}
+
+.pricing-table .card ul li:last-child{
+  border:0px;
+}
+
+.pricing-table .card ul li p{
+  font-weight: 500;
+}
+
+/* BUTTON */
+
+button{
+  margin-top: 15px;
+  border:0px;
+  background: blue;
+  color:white;
+  padding: 10px 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5 ease;
+}
+
+button:hover{
+  background: #7B92AA;
+}
+
+/* ACTIVE */
+.pricing-table .card.active button{
+  background: green;
+}
+
+.pricing-table .card.active button:hover{
+  background: purple;
+}
+
+.pricing-table .card.active .icon{
+  position: absolute;
+  top: -35px;
+  right: -35px;
+  border: 35px solid;
+  border-color: transparent transparent transparent purple;
+  transform: rotate(-45deg);
+}
+
+/* STAR ICON */
+.pricing-table .card .icon .i{
+  color: white;
+  position: absolute;
+  bottom: -5px;
+  right: 15px;
+}
+
+.pricing-table .card.active .price p{
+  color: green;
+}
+
+.pricing-table .card.active{
+  transform: scale(1.05);
+  z-index: 1;
+  border-right: 0;
+  box-shadow: 2px 0 5px 2px rgba(0,0,0,0.05), -2px 0 5px 2px rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+footer {
+  font-size: 24px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: -60px;
+
+  }

@@ -1,0 +1,101 @@
+/* :root {
+  --text: #DCCAE9;
+  --softpurple: #A6A9C8;
+  --text2: #D3D9E9;
+  --dark: #31293F;
+  --dark2: #272932;
+  --middletone: #554D74;
+  --button: #FFB6C1;
+} 
+
+
+
+
+ /* Style inputs with type="text", select elements and textareas */
+
+
+ body {
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+
+.jumbotron {
+  background-image: url(/assets/images/image3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar {
+  position: absolute;
+  top: -50px;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.navbar-brand {
+  font-size: 30px !important;
+  color: white !important;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+  top: -5px;
+}
+
+#navbarNav{
+  margin-left: 0;
+  position: absolute;
+  right: 10px;
+
+}
+#navbarNav li {
+  margin-left: 30px;
+  font-size: 20px;
+
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+#submit- {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+#submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer {
+  font-size: 24px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 60px;
+  }
