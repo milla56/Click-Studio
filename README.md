@@ -26,3 +26,12 @@ https://milla56.github.io/Click-Studio/index.html
 - HTML: Lubomila Lozanova https://github.com/milla56/ 
 - CSS: Qasim Muhammad https://github.com/Qasim538
 - JavaScript: Laszlo Somogyi https://github.com/laszlosomogyimusic
+
+## Technologies Used
+- HTML5
+- CSS3
+- BootStrap
+- Javascript 5
+- jQuery
+- Shutterstock image search API  
+- Shutterstock video search API
