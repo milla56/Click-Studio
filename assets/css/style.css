@@ -100,10 +100,9 @@ body {
 /* Button */
 
 #searchButton{
+  background-color: var(--middletone);
   top:6px;
-  transition: ease-in;
   border-radius: 50px !important;
-  border: 1px solid var(--middletone);
   color: white;
   position: absolute;
   right: 10px;
@@ -115,7 +114,6 @@ body {
 #searchButton:hover{
   color: var(--text) !important;
   background-color: var(--dark);
-  border: none;
 
 }
 
