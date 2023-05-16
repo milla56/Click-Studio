@@ -19,7 +19,6 @@ function prepareSearch() {
 
 
 //manipulate DOM to add a row to the pictures grid with the columns
-//the columns varies between 2 and 3 to make the visuals more interesting
 //the first flag parameter tells what kind of element is in the grid cell
 function renderRow(flag, numberOfColumns, subArrayImages) {
   var rowDiv = $("<div>");
@@ -59,18 +58,9 @@ function renderRow(flag, numberOfColumns, subArrayImages) {
 function renderImages() {
   var pointer = 0;
 
-  var col2 = 2;
-  var col3 = 3;
-  var numOfColumns = col3;
+  var numOfColumns = 3;
 
   while(pointer < imagesArray.length) {
-
-    if(numOfColumns === col3) {
-      numOfColumns = col2;
-    } else if (numOfColumns === col2) {
-      numOfColumns = col3;
-    }
-
     var endPointer = pointer + numOfColumns;
     if(endPointer > imagesArray.length) {
       endPointer = imagesArray.length;
@@ -84,17 +74,9 @@ function renderImages() {
 
 function renderVideos() {
   var pointer = 0;
-
-  var col2 = 2;
-  var col3 = 3;
-  var numOfColumns = col3;
+  var numOfColumns = 3;
 
   while(pointer < videosArray.length) {
-    if(numOfColumns === col3) {
-      numOfColumns = col2;
-    } else if (numOfColumns === col2) {
-      numOfColumns = col3;
-    }
 
     var endPointer = pointer + numOfColumns;
     if(endPointer > videosArray.length) {
