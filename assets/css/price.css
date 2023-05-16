@@ -72,7 +72,7 @@ body {
 
 .images{
   position:absolute;
-  right: 900px;
+  right: 1000px;
   pointer-events: none;
   color: white;
   font-size: 18px;
