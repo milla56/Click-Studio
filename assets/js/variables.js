@@ -13,6 +13,9 @@ var picturesDiv = $("#pictures");
 var classNameGridImages = "grid-images";
 var classNameGridVideos = "grid-videos";
 
+//localstorage key name
+var localStorageClickStudioSearch = "ClickStudio-Search";
+
 //this is the search string entered to the inpt field
 var searchString = "";
 

@@ -4,6 +4,16 @@ function initVariables() {
   videosArray = [];
 }
 
+//The last searched string will be inserted to the search input text
+function loadSearchString() {
+  searchString = localStorage.getItem(localStorageClickStudioSearch);
+  searchInput.val(searchString);
+}
+
+//saves the last search string to the local storage
+function saveSearchString() {
+  localStorage.setItem(localStorageClickStudioSearch, searchString);
+}
 
 //Initialise the variables, get the input query and do the search in the backend
 function prepareSearch() {
@@ -11,6 +21,7 @@ function prepareSearch() {
 
   //see the structure in globalvariables
   searchString = searchInput.val().trim();
+  saveSearchString();
 
   //this is in the backendscript, and it will call the image and video search
   //the second API call is chained into the backendscript.js parseImageSearch() function
@@ -112,3 +123,6 @@ searchInput.on("keypress", function(event) {
     prepareSearch();
   }
 });
+
+initVariables();
+loadSearchString();
