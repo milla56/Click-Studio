@@ -1,8 +1,13 @@
+
 function initVariables() {
   picturesDiv.empty();
   imagesArray = [];
   videosArray = [];
 }
+
+// Active class
+
+// Loop through the buttons and add the active class to the current/clicked button
 
 
 //Initialise the variables, get the input query and do the search in the backend
@@ -112,3 +117,6 @@ searchInput.on("keypress", function(event) {
     prepareSearch();
   }
 });
+
+
+
